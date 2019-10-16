@@ -15,9 +15,11 @@ export class CounterService {
 
   countActiveToInactive() {
     ++this.activeToInactiveCount;
+    console.log(`active -> inactive: ${this.activeToInactiveCount}`);
   }
 
   countInactiveToActive() {
     ++this.inactiveToActiveCount;
+    console.log(`inactive -> active: ${this.inactiveToActiveCount}`);
   }
 }
